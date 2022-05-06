@@ -1,0 +1,23 @@
+CREATE TABLE  Book_Store (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, pages INTEGER);
+INSERT INTO Book_Store VALUES (1, "Atomic Habits", 4, 12.99, 320);
+INSERT INTO Book_Store VALUES (2, "Seven Husbands of Evelyn Hugo", 6, 14.99,400);
+INSERT INTO Book_Store VALUES (3, "The Plot", 36, 16.39, 317);
+INSERT INTO  Book_Store VALUES (4, "How The Word Is Passed", 16, 14.59, 353);
+INSERT INTO Book_Store VALUES (5, "The Four Winds",3,13.79,450);
+INSERT INTO Book_Store VALUES (6, "Empire of Pain",11,25.99,558);
+INSERT INTO Book_Store VALUES (7, "Harlem Shuffle: A Novel", 41, 17.58, 320);
+INSERT INTO Book_Store VALUES (8, "Great Circle", 14,16.26,673);
+INSERT INTO Book_Store VALUES (9, "Klara And The Sun", 15,14.49,418);
+INSERT INTO Book_Store VALUES (10, "Razorblade Tears", 12, 13.49,329);
+INSERT INTO Book_Store VALUES (11, "What Storm, What Thunder",11.,16.37,314);
+INSERT INTO Book_Store VALUES (12, "The Sentence", 32,20.49,395);
+INSERT INTO Book_Store VALUES (13, "The Last Thing He Told Me",12,13.50,316);
+INSERT INTO Book_Store VALUES (14,"Count the Ways",10,23.94,461);
+INSERT INTO Book_Store VALUES (15, "Atlas Of The Heart",19,18.34,318);
+SELECT * FROM Book_Store;
+SELECT * FROM Book_Store ORDER BY price;
+SELECT quantity, SUM (quantity) FROM Book_Store;
+
+SELECT SUM(pages) FROM Book_Store;
+
+SELECT * from Book_Store ORDER BY pages;
