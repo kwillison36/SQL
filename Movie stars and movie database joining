@@ -1,0 +1,23 @@
+CREATE TABLE movie_stars (id INTEGER primary key, star TEXT,spouse TEXT);
+INSERT INTO movie_stars VALUES 
+(1, "Will Smith", "Jada Pickett-Smith");
+INSERT INTO movie_stars VALUES
+(2, "Blake Lively", "Ryan Reynolds");
+INSERT INTO movie_stars VALUES
+(3, "Jessica Biel", "Justin Timberlake");
+SELECT * FROM movie_stars;
+
+CREATE TABLE movies (id INTEGER primary key, name TEXT, star TEXT);
+INSERT INTO movies VALUES
+(1, "Hitch","Will Smith");
+INSERT INTO movies VALUES
+(2, "Deadpool", "Ryan Reynolds");
+INSERT INTO movies VALUES
+(3, "A Simple Favor","Blake Lively");
+INSERT INTO movies VALUES
+(4, "Blade","Jessica Biel");
+SELECT * FROM movies;
+
+SELECT movie_stars.star, movie_stars.spouse, movies.name FROM movie_stars 
+JOIN movies
+ON movie_stars.star = movies.star;
